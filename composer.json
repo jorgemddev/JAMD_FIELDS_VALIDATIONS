@@ -1,0 +1,15 @@
+{
+    "name": "jorgemddev/fields_validations",
+    "authors": [
+        {
+            "name": "Jorge Morales D",
+            "email": "jorge.md.app@gmail.com"
+        }
+    ],
+    "description": "Class Class that performs the validation of values ​​entered through array, key: value, ideal for validating forms through POST or GET",
+    "type": "library",
+    "license": "MIT",
+     "require": {
+        "php": ">=7.4"
+    }
+}
