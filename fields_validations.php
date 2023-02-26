@@ -1,9 +1,13 @@
-
-/**
- * Description of validations
+<?php
+/* This file is responsible for validating values ​​received in array, key: ideal value for POST and GET requests
  *
- * @author jorge
+ * (c) Jorge Morales  <jorge.md.app@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
+namespace Jorgemddev\FieldsValidations;
+
 class FieldValidations {
 
     /**
