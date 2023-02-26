@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "62332f6a46f0152925d70c4b9bc2bc19",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "jorgemddev/jamd_utilidad",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jorgemddev/JAMD_UTILIDAD.git",
+                "reference": "1079f0cd01886854ba455bb1ec8bb64614a2fbcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jorgemddev/JAMD_UTILIDAD/zipball/1079f0cd01886854ba455bb1ec8bb64614a2fbcc",
+                "reference": "1079f0cd01886854ba455bb1ec8bb64614a2fbcc",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jorgemddev\\JamdUtilidad\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Morales D",
+                    "email": "jorge.md.app@gmail.com"
+                }
+            ],
+            "description": "Clase con varios metodos utiles para validar, formatear y realizar tareas basicas pero necesarias en el procesamiento de información",
+            "support": {
+                "issues": "https://github.com/jorgemddev/JAMD_UTILIDAD/issues",
+                "source": "https://github.com/jorgemddev/JAMD_UTILIDAD/tree/main"
+            },
+            "time": "2023-02-26T16:28:03+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "jorgemddev/jamd_utilidad": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

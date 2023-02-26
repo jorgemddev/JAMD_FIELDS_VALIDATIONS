@@ -1,4 +1,5 @@
 <?php
+require_once 'vendor/autoload.php';
 /* This file is responsible for validating values ​​received in array, key: ideal value for POST and GET requests
  *
  * (c) Jorge Morales  <jorge.md.app@gmail.com>
@@ -6,7 +7,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+use Jorgemddev\JamdUtilidad;
 namespace Jorgemddev\FieldsValidations;
+
+use Jorgemddev\JamdUtilidad\Utilidad;
 
 class FieldValidations {
 
@@ -310,7 +314,7 @@ class FieldValidations {
     }
 
     private function rut($param, $filters = null) {
-        return (Utilidad::isRut($this->normalizeString($param))) ? $this->normalizeString($param) : false;
+        return (Utilidad::isValidRut($this->normalizeString($param))) ? $this->normalizeString($param) : false;
     }
 
     private function date($param, $filters = null) {

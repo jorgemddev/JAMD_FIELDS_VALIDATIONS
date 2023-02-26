@@ -1,15 +1,21 @@
 {
-    "name": "jorgemddev/fields_validations",
+    "name": "jorge/jamd_fields_validations",
+    "description": "Clase encargada de la validacion de valores recibidos por POST y GET",
+    "type": "library",
+    "require-dev": {
+        "jorgemddev/jamd_utilidad": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jorge\\JamdFieldsValidations\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Jorge Morales D",
             "email": "jorge.md.app@gmail.com"
         }
     ],
-    "description": "Class Class that performs the validation of values ​​entered through array, key: value, ideal for validating forms through POST or GET",
-    "type": "library",
-    "license": "MIT",
-     "require": {
-        "php": ">=7.4"
-    }
+    "require": {}
 }
