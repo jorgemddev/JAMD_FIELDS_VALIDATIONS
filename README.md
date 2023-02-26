@@ -3,7 +3,7 @@ Clase que procesa los valores recibidos por peticiones POST y GET
 ### Usage ###
 
 ~~~
-__//recibimos los datos mediante POST o GET__
+//recibimos los datos mediante POST o GET
  $_data       =  $_POST["form"];
  //instanciamos la clase de valdiación pasando en su constructor el array con los valores clave:valor
  $validations =  new FieldValidations($_data);
@@ -36,6 +36,7 @@ __//recibimos los datos mediante POST o GET__
  * __msg__: Establece el mensaje a devolver en caso de no efectuarse la vaidación correspondiente
  * __validations__: Array donde se establece el tipo de validación  
  * __Validations => array("type"=>"rut","msg"=>"el valor %v% ingresado no corresponde")__: Se debe establecer un array que tenga como parametros el type de validación y el mensaje 
+ *  * __format__: Array donde se establece el tipo de formato a utilizar sobre un campo  
  * __getData()__: Returns un array asociativo con los campos antes ingresados y con sus valroes validados y formateados
  * __getMistakes()__: Returns un array con los errores cometidos en la validación
 ### License ###
