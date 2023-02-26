@@ -30,7 +30,7 @@ Clase que procesa los valores recibidos por peticiones POST y GET
 ~~~
 
 ### Rules ###
-* __valdiate()__: Returns FALSE en caso de que alguno de los campos no cumple su condicion establecida, TRUE en caso de ser valido
+* __validate()__: Returns FALSE en caso de que alguno de los campos no cumple su condicion establecida, TRUE en caso de ser valido
  * __array():__ Todos las valdiaciones se cargan en el metodo validate, pasando como clave el nombre del campo y las validaciones correspondienye
  * __required:__ Se establece si el valor el obligatorio o no 
  * __msg__: Establece el mensaje a devolver en caso de no efectuarse la vaidación correspondiente
