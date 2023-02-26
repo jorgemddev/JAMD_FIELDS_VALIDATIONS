@@ -3,7 +3,7 @@ Clase que procesa los valores recibidos por peticiones POST y GET
 ### Usage ###
 
 ~~~
-//recibimos los datos mediante POST o GET
+__//recibimos los datos mediante POST o GET__
  $_data       =  $_POST["form"];
  //instanciamos la clase de valdiación pasando en su constructor el array con los valores clave:valor
  $validations =  new FieldValidations($_data);
@@ -30,25 +30,14 @@ Clase que procesa los valores recibidos por peticiones POST y GET
 ~~~
 
 ### Rules ###
- * array(): Todos las valdiaciones se cargan en el metodo validate, pasando como clave el nombre del campo y las validaciones correspondienye
- * required: Returns FALSE if the form element is empty. 
- * __minlength__: Returns FALSE if the form element is shorter then the parameter value. minlength=>6
- * __maxlength__: Returns FALSE if the form element is longer then the parameter value. maxlength=>10  
- * __email__: Returns FALSE if the form element does not contain a valid email address.
- * __activeemail__: Returns FALSE if the form element does not contain a valid and active email address. 
- * __url__: Returns FALSE if the form element does not contain a valid url address.
- * __activeurl__: Returns FALSE if the form element does not contain a valid and active url address.
- * __ip__: Returns FALSE if the supplied IP is not valid.
- * __alpha__: Returns FALSE if the form element contains anything other than alphabetical characters.
- * __alphaupper__: Returns FALSE if the form element contains anything other than upper alphabetical characters.
- * __alphalower__: Returns FALSE if the form element contains anything other than lower alphabetical characters.
- * __alphadash__: Returns FALSE if the form element contains anything other than alpha-numeric characters, underscores or dashes.
- * __alphanum__: Returns FALSE if the form element contains anything other than alpha-numeric characters.
- * __hexadecimal__: Returns FALSE if the form element contains anything other than hexadecimal characters.
- * __numeric__: Returns FALSE if the form element contains anything other than numeric characters.
- * __matches__: Returns FALSE if the form element does not match the one in the parameter. matches[form_item] 
- * __unique__: Returns FALSE if the form element is not unique to the table and field name in the parameter. unique[field]
-
+* __valdiate()__: Returns FALSE en caso de que alguno de los campos no cumple su condicion establecida, TRUE en caso de ser valido
+ * __array():__ Todos las valdiaciones se cargan en el metodo validate, pasando como clave el nombre del campo y las validaciones correspondienye
+ * __required:__ Se establece si el valor el obligatorio o no 
+ * __msg__: Establece el mensaje a devolver en caso de no efectuarse la vaidación correspondiente
+ * __validations__: Array donde se establece el tipo de validación  
+ * __Validations => array("type"=>"rut","msg"=>"el valor %v% ingresado no corresponde")__: Se debe establecer un array que tenga como parametros el type de validación y el mensaje 
+ * __getData()__: Returns un array asociativo con los campos antes ingresados y con sus valroes validados y formateados
+ * __getMistakes()__: Returns un array con los errores cometidos en la validación
 ### License ###
 
 Released under the [MIT](http://www.opensource.org/licenses/mit-license.php) license<br>
