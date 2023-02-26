@@ -33,10 +33,11 @@ Clase que procesa los valores recibidos por peticiones POST y GET
 * __validate()__: Returns FALSE en caso de que alguno de los campos no cumple su condicion establecida, TRUE en caso de ser valido
  * __array():__ Todos las valdiaciones se cargan en el metodo validate, pasando como clave el nombre del campo y las validaciones correspondienye
  * __required:__ Se establece si el valor el obligatorio o no 
+ * __default:__ Se establece el valor por defecto
  * __msg__: Establece el mensaje a devolver en caso de no efectuarse la vaidación correspondiente
  * __validations__: Array donde se establece el tipo de validación  
  * __Validations => array("type"=>"rut","msg"=>"el valor %v% ingresado no corresponde")__: Se debe establecer un array que tenga como parametros el type de validación y el mensaje 
- *  * __format__: Array donde se establece el tipo de formato a utilizar sobre un campo  
+ * __format__: Array donde se establece el tipo de formato a utilizar sobre un campo  
  * __getData()__: Returns un array asociativo con los campos antes ingresados y con sus valroes validados y formateados
  * __getMistakes()__: Returns un array con los errores cometidos en la validación
 ### License ###
